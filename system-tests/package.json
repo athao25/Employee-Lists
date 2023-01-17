@@ -1,0 +1,16 @@
+{
+    "name": "system-tests",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "@playwright/test": "^1.29.2",
+        "dotenv": "^16.0.3"
+    },
+    "scripts": {
+        "test": "BASE_ENV=local playwright test --project=chromium --headed",
+        "test:ci:prod": "BASE_ENV=prod yarn test:prod --reporter='html,github' --project=firefox --project=webkit"
+    },
+    "dependencies": {}
+}
