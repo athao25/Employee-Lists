@@ -12,5 +12,5 @@ yarn start &
 echo "React and Node servers started!"
 
 
-trap "echo 'CTRL+C detected, stopping the server...'; kill -9 $SERVER_PID" SIGINT SIGTERM
+trap "echo 'CTRL+C detected, Press ENTER to stop the server...'; kill -9 $SERVER_PID" SIGINT SIGTERM
 read -p "Press [Enter] to exit the script..."
