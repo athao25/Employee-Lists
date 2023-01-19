@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { createFullName, createJobTitle } from '../util/faker-data';
 import { EmployeePage } from '../pages/employee_page';
 import { AddEmployeePage } from '../pages/add_employee_page';
